@@ -12,44 +12,99 @@ Fluorescence Loss In PhotoBleaching (FLIP)
 
 
 
-This Particular Repository Provides Guidelines for Use of Source Code utilized in ShenGelashvili et al., 2024;
-The Repository Includes representative demo file outputs as source for software test. Most .STL source file are too large to upload as demo on Github - yet we managed to provide one, fragmented ER representative.  
+🧭 Repository Overview
+
+This repository provides guidelines and part of the source code used in:
+
+ShenGelashvili et al., 2024
+
+Representative demo file outputs for testing the software.
+
+Sample .stl files for 3D visualization.
+(Note: Most .stl source files are too large to host on GitHub. We have provided one fragmented ER example as a representative demo.)
 
 
 
 
 
+💻 System Requirements
+
+Operating System
+
+Windows 11 — any base or version (tested on Windows 11 v24H2 x64)
+
+GPU Acceleration (Optional but Recommended)
+For GPU-accelerated processing, install the CUDA 13.0 toolkit and enable CuPy
+, which is later utilized by the pyclesperanto plugin | https://developer.nvidia.com/cuda-downloads?target_os=Windows&target_arch=x86_64&target_version=11 
+
+Recommended Hardware (Minimum)
+
+RAM: 64 GB+ DDR4/DDR5 @ 3600 MT/s
+
+GPU: NVIDIA RTX Quadro P4000 / GeForce RTX 3070 or similar (≥ 8 GB VRAM)
+
+CPU: Intel Core i5-8400 or AMD Ryzen 5 2600 (or better)
 
 
+📦 Package Installation
+
+All required packages are listed in my_current_env_list.txt.
+To install dependencies:
+you can recreate the environment from the provided .yml file using Conda:
 
 
-
-
-
-System Requirements: 
-Windows 11 (Any Base or version works as long as Win 11)
-Tested: W11 V:24H2 x64
-For Assist with GPU processing requires the installation of CUDA 13.0 toolkit, enabling CuPy for Windows 11: https://developer.nvidia.com/cuda-downloads?target_os=Windows&target_arch=x86_64&target_version=11 | later utilized by pyclesperanto plugin https://pypi.org/project/pyclesperanto/ 
-
-Windows Minimum System Recommendation:
-DDR4 or DDR5 RAM: 64gb+ 3600 MT/s
-Dedicated Graphics Card: RTX Quadro P4000 or GeForce RTX 3070 or similar at least 8gb+ VRM models (NVIDIA)
-CPU: Intel or AMD at least: Intel Core i5-8400, AMD Ryzen 5 2600
-
-
+conda env create -f environment.yml
+conda activate Microscopy_Analysis_Advanced2  # example env name
 
 
 Package Install:
-The Repository contains a complete package list. Please perform PIP install for required and imported package versions as indicated in my_current_env_list.txt and script (3D) or FLIP. 
+The Repository contains a complete package list. Please perform a PIP install for the required and imported package versions as indicated in my_current_env_list.txt and the script (3D) or FLIP. 
 
+
+🧰 Source Code Description
+
+This repository includes two primary components:
+
+3D Conversion Script
+
+Converts .stl files into .html files for interactive 3D viewing in the browser.
+
+Script: 3D_SuperRes_HTML.py
+
+FLIP Analysis Script
+
+Combines Fiji (ImageJ) ROI measurements (e.g., ROI_1, ROI_2, ROI_3 for nucleus and control regions)
+
+Generates quantification plots used in the manuscript.
 
 Source Code Listed Here Converts .STL file to .HTML for 3D interacitve view, and FLIP source code combines Fiji(Just Image J) ROI_1, ROI_2, ROI_3 Nucleus and Control quantifications to yield given plots. 
 
-Guidelines:
-Download the .stl file in Demo_File_3D folder
-Place file in a folder anywhere that is easily availalbe later. 
-Install the envrionment as guided by .yml file or by VS code erros. 
-Download 3D_SuperRes_HTML.py - this is the main executable that can be opened in VS Code or PyCharm, it is a safe file for download. 
+
+📋 Usage Guidelines
+
+Download the Demo .stl File
+
+Located in Demo_File_3D/
+
+Place it in any easily accessible folder.
+
+Set Up the Environment
+
+Install the required packages as described above (YAML or pip).
+
+Use the recommended Python environment (e.g., Microscopy_Analysis_Advanced2).
+
+Run the 3D Conversion Script
+
+Download 3D_SuperRes_HTML.py (main executable).
+
+Open the file in VS Code or PyCharm.
+
+Ensure the interpreter is set to the proper Python 3.9 environment.
+
+Run the script to generate .html output.
+
+
 The file has to be first opened in VS Code or Pycharm with Proper Python Interpreter (this is the Environment, 3.9 Python Base that should be installed from .yml file) - For example, Microscopy_Analysis_Advanced2 (My Current Environment). 
 
 <img width="1729" height="1129" alt="image" src="https://github.com/user-attachments/assets/eb2c4999-1b95-487e-beab-8c28eec1ffdb" />
