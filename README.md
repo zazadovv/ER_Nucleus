@@ -44,3 +44,14 @@ The Repository contains a complete package list. Please perform PIP install for 
 
 Source Code Listed Here Converts .STL file to .HTML for 3D interacitve view, and FLIP source code combines Fiji(Just Image J) ROI_1, ROI_2, ROI_3 Nucleus and Control quantifications to yield given plots. 
 
+Guidelines:
+Download the .stl file in Demo_File_3D folder
+Place file in a folder anywhere that is easily availalbe later. 
+Install the envrionment as guided by .yml file or by VS code erros. 
+Download 3D_SuperRes_HTML.py - this is the main executable that can be opened in VS Code or PyCharm, it is a safe file for download. 
+The file has to be first opened in VS Code or Pycharm with Proper Python Interpreter (this is the Environment, 3.9 Python Base that should be installed from .yml file) - For example, Microscopy_Analysis_Advanced2 (My Current Environment). 
+
+<img width="1729" height="1129" alt="image" src="https://github.com/user-attachments/assets/eb2c4999-1b95-487e-beab-8c28eec1ffdb" />
+Output Example:
+<img width="3683" height="1639" alt="image" src="https://github.com/user-attachments/assets/25977eb8-80b3-45d8-8feb-64b579b17531" />
+
