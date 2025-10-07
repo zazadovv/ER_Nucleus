@@ -30,7 +30,8 @@ System Requirements:
 Windows 11 (Any Base or version works as long as Win 11)
 Tested: W11 V:24H2 x64
 For Assist with GPU processing requires the installation of CUDA 13.0 toolkit, enabling CuPy for Windows 11: https://developer.nvidia.com/cuda-downloads?target_os=Windows&target_arch=x86_64&target_version=11 | later utilized by pyclesperanto plugin https://pypi.org/project/pyclesperanto/ 
-Windows System Recommendations:
+
+Windows Minimum System Recommendation:
 DDR4 or DDR5 RAM: 64gb+ 3600 MT/s
 Dedicated Graphics Card: RTX Quadro P4000 or GeForce RTX 3070 or similar at least 8gb+ VRM models (NVIDIA)
 CPU: Intel or AMD at least: Intel Core i5-8400, AMD Ryzen 5 2600
