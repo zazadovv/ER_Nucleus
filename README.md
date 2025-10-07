@@ -13,7 +13,7 @@ Fluorescence Loss In PhotoBleaching (FLIP)
 
 
 This Particular Repository Provides Guidelines for Use of Source Code utilized in ShenGelashvili et al., 2024;
-The Repository Includes representative demo file outputs as source for software test. The . STL source file is too large to upload as demo on Github 
+The Repository Includes representative demo file outputs as source for software test. Most .STL source file are too large to upload as demo on Github - yet we managed to provide one, fragmented ER representative.  
 
 
 
